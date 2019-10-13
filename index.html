@@ -8,12 +8,12 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet" type="text/css">
   
-    <title>WhitePanda Orders</title>
+    <title>Whitepanda Orders</title>
     <style type=text/css >
 
-    #top{
-        margin-left: 100px;
-    }
+#top{
+    margin-left: 100px;
+}
 
 .sidebar {
   height: 100%;
@@ -25,20 +25,20 @@
   background-color: none;
   overflow-x: hidden; 
   padding-top: 20px;
-  box-shadow: 4px 4px 7px rgba(0,0,0,0.1);
+  box-shadow: 5px 4px 6px rgba(0,0,0,0.1);
 }
 
 .sidebar:hover {
-    box-shadow: 4px 4px 7px rgba(0,0,0,0.1);
+    box-shadow: 5px 4px 6px rgba(0,0,0,0.1);
 }
 
 .navbar{
     margin-left: 80px;
-    box-shadow: 4px 4px 7px rgba(0,0,0,0.1);
+    box-shadow: 5px 4px 6px rgba(0,0,0,0.1);
 }
 
 .navbar:hover{
-    box-shadow: 4px 4px 7px rgba(0,0,0,0.1);
+    box-shadow: 5px 4px 6px rgba(0,0,0,0.1);
 }
 
 .head{
@@ -76,7 +76,7 @@
         color: wheat;
       }
 
-      .order:hover
+      .mainbtn:hover
       {
         transform: translate(0, -10px);
         background-color: #00808C;
@@ -96,7 +96,7 @@
       .card:hover
       {
         transform: translate(0, -5px);
-        box-shadow: 4px 4px 7px rgba(0,0,0,0.1);
+        box-shadow: 5px 4px 6px rgba(0,0,0,0.1);
       }
 
       .content
@@ -132,9 +132,9 @@
         width: 100%;
         height: 30%;
         text-align: center;
-        color: rgba(0,0,0,0.7);
-        font-size: 16px;
-        padding: 15px;
+        color: rgba(0,0,0,0.6);
+        font-size: 18px;
+        padding: 16px;
       }
 
       @media screen and (max-width: 720px) {
@@ -164,6 +164,8 @@
 
 
 <body>
+      
+       <!-- SIDEBAR -->
 
     <div class="sidebar">
             <i style="margin-top: 70px;" class="fas fa-th-large"></i>
@@ -171,42 +173,51 @@
             <i class="fas fa-store"></i>
     </div>
 
+        <!-- NAVBAR -->
 
     <nav  class="navbar navbar-light bg-light">
             <span id="top" class="navbar-brand mb-0 h1">white<b>panda</b></span>
             <i style="margin-right: 100px" class="fas fa-bell"></i>
     </nav>
 
+      <!-- MAIN PAGE -->
 
 <div class="main1" >  
   <div class='row' style="display: inline-block">
-    <div class="content" style="display: inline-block">
-      <span class="head">Content Store</span>
+            <div class="content" style="display: inline-block">
+                <span class="head">Content Store</span>
  
-      <div class="jumbotron">
-        <h5>Got bulk orders or similar orders? Order easily by filling in an excel sheet.</h5> 
-        <p>
-          If you're wondering about an easy way to place orders in large numbers, we provide a way customised just for that. Download our excel sheet, and fill the order brief in prescribed format and submit it. In case you need any help,
-           <a style="text-decoration: underline;">we are just a click away to assit you in placing your order </a>
-        </p>  
+                <div class="jumbotron">
+                    <h5>Got bulk orders or similar orders? Order easily by filling in an excel sheet.</h5> 
+                    <p>
+                        If you're wondering about an easy way to place orders in large numbers, we provide a way customised just for that. Download our excel sheet, and fill the order brief in prescribed format and submit it. In case you need any help,
+                     <a style="text-decoration: underline;">we are just a click away to assit you in placing your order </a>
+                    </p>  
         
-        <a href="#" class="btn btn-light order" style="width: 15rem"> Order via Excel sheet </a>
-      </div>
-    </div>
+                    <a href="#" class="btn btn-light mainbtn" style="width: 15rem"> Order via Excel sheet </a>
+                </div>
+             </div>
 
+     <!-- INSIDE MAIN PAGE USING BOOTSTRAP CARDS FOR MAIN BODY OF PAGE -->
 
+        <div class="container main2">
+            <div class="row">
 
-    <div class="container main2">
-        <div class="row">
+                <!-- FIRST COLUMN AS A CARD -->
+
                 <div class="col-xs-12 col-sm-6  col-md-4">
                     <div class="card" >
+
+                        <!-- HEAD OF MAIN CARD -->
                             
-                                     <!-- inside card -->
+                                     <!-- inside card of each separate card on page for better image and heading -->
                                 <div class="card mb-3" >
                                     <div class="row no-gutters">
+                                        <!-- image in inside card -->
                                             <div class="col-md-4">
                                             <img src="https://cdn.pixabay.com/photo/2019/09/26/02/21/monarch-4504909__340.jpg" class="card-img rounded-circle" style="height: 100px" alt="...">
                                             </div>
+                                            <!-- body of inside card -->
                                         <div class="col-md-8">
                                             <div class="card-body">
                                                 <h5 class="card-title">Blog/Article</h5>
@@ -215,6 +226,8 @@
                                         </div>
                                     </div>
                                 </div>
+                                
+                              <!-- BODY OF MAIN CARD -->
 
                                 <div class="card-body">
                                     <p class="card-text">Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users.</p>
@@ -223,32 +236,34 @@
                     </div>
                 </div>
 
+              <!-- SECOND COLUMN AS A CARD -->
 
                 <div class="col-xs-12 col-sm-6  col-md-4">
                         <div class="card" >
                                 
                                          <!-- inside card -->
-                                    <div class="card mb-3" >
-                                        <div class="row no-gutters">
-                                                <div class="col-md-4">
-                                                <img src="https://cdn.pixabay.com/photo/2019/09/29/21/15/squirrel-4514426__340.jpg" class="card-img rounded-circle" style="height: 100px" alt="...">
-                                                </div>
-                                            <div class="col-md-8">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">News/Article</h5>
-                                                    <p class="card-text">from $500</p>
+                                            <div class="card mb-3" >
+                                                <div class="row no-gutters">
+                                                        <div class="col-md-4">
+                                                        <img src="https://cdn.pixabay.com/photo/2019/09/29/21/15/squirrel-4514426__340.jpg" class="card-img rounded-circle" style="height: 100px" alt="...">
+                                                        </div>
+                                                    <div class="col-md-8">
+                                                     <div class="card-body">
+                                                         <h5 class="card-title">News/Article</h5>
+                                                         <p class="card-text">from $500</p>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
     
-                                    <div class="card-body">
-                                        <p class="card-text">Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users.</p>
-                                        <a href="#" class="btn btn-primary">Order</a>
-                                    </div>
+                                <div class="card-body">
+                                    <p class="card-text">Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users.</p>
+                                    <a href="#" class="btn btn-primary">Order</a>
+                                </div>
                         </div>
                 </div>
 
+               <!-- THIRD COLUMN AS A CARD -->
 
                     <div class="col-xs-12 col-sm-6  col-md-4">
                             <div class="card" >
@@ -268,13 +283,14 @@
                                             </div>
                                         </div>
         
-                                        <div class="card-body">
-                                            <p class="card-text">Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users.</p>
-                                            <a href="#" class="btn btn-primary">Order</a>
-                                        </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users.</p>
+                                        <a href="#" class="btn btn-primary">Order</a>
+                                    </div>
                             </div>
                     </div>
 
+                           <!-- FOURTH COLUMN AS A CARD -->
 
                         <div class="col-xs-12 col-sm-6  col-md-4">
                                 <div class="card" >
@@ -294,13 +310,14 @@
                                                 </div>
                                             </div>
             
-                                            <div class="card-body">
-                                                <p class="card-text">Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users.</p>
-                                                <a href="#" class="btn btn-primary">Order</a>
-                                            </div>
+                                        <div class="card-body">
+                                            <p class="card-text">Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users.</p>
+                                            <a href="#" class="btn btn-primary">Order</a>
+                                        </div>
                                 </div>
                         </div>
 
+                           <!-- FIFTH COLUMN AS A CARD -->
 
                             <div class="col-xs-12 col-sm-6  col-md-4">
                                     <div class="card" >
@@ -320,13 +337,14 @@
                                                     </div>
                                                 </div>
                 
-                                                <div class="card-body">
-                                                    <p class="card-text">Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users.</p>
-                                                    <a href="#" class="btn btn-primary">Order</a>
-                                                </div>
+                                            <div class="card-body">
+                                                <p class="card-text">Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users.</p>
+                                                <a href="#" class="btn btn-primary">Order</a>
+                                            </div>
                                     </div>
                             </div>
 
+                               <!-- SIXTH COLUMN AS A CARD -->
 
                                 <div class="col-xs-12 col-sm-6  col-md-4">
                                         <div class="card" >
@@ -346,13 +364,14 @@
                                                         </div>
                                                     </div>
                     
-                                                    <div class="card-body">
-                                                        <p class="card-text">Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users.</p>
-                                                        <a href="#" class="btn btn-primary">Order</a>
-                                                    </div>
+                                                <div class="card-body">
+                                                    <p class="card-text">Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users.</p>
+                                                    <a href="#" class="btn btn-primary">Order</a>
+                                                </div>
                                         </div>
                                 </div>
 
+                                      <!-- SEVENTH COLUMN AS A CARD -->
 
                                     <div class="col-xs-12 col-sm-6  col-md-4">
                                             <div class="card" >
@@ -372,13 +391,14 @@
                                                             </div>
                                                         </div>
                         
-                                                        <div class="card-body">
-                                                            <p class="card-text">Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users.</p>
-                                                            <a href="#" class="btn btn-primary">Order</a>
-                                                        </div>
+                                                    <div class="card-body">
+                                                        <p class="card-text">Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users.</p>
+                                                        <a href="#" class="btn btn-primary">Order</a>
+                                                    </div>
                                             </div>
                                     </div>
 
+                                        <!-- EIGHT COLUMN AS A CARD -->
 
                                         <div class="col-xs-12 col-sm-6  col-md-4">
                                                 <div class="card" >
@@ -398,13 +418,14 @@
                                                                 </div>
                                                             </div>
                             
-                                                            <div class="card-body">
-                                                                <p class="card-text">Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users.</p>
-                                                                <a href="#" class="btn btn-primary">Order</a>
-                                                            </div>
+                                                        <div class="card-body">
+                                                            <p class="card-text">Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users.</p>
+                                                            <a href="#" class="btn btn-primary">Order</a>
+                                                        </div>
                                                 </div>
                                         </div>
 
+                                             <!-- NINTH COLUMN AS A CARD -->
 
                                             <div class="col-xs-12 col-sm-6  col-md-4">
                                                     <div class="card" >
@@ -424,13 +445,14 @@
                                                                     </div>
                                                                 </div>
                                 
-                                                                <div class="card-body">
-                                                                    <p class="card-text">Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users.</p>
-                                                                    <a href="#" class="btn btn-primary">Order</a>
-                                                                </div>
+                                                            <div class="card-body">
+                                                                <p class="card-text">Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users.</p>
+                                                                <a href="#" class="btn btn-primary">Order</a>
+                                                            </div>
                                                     </div>
                                             </div>
 
+                                                <!-- TENTH COLUMN AS A CARD -->
 
                                                 <div class="col-xs-12 col-sm-6  col-md-4">
                                                         <div class="card" >
@@ -450,15 +472,15 @@
                                                                         </div>
                                                                     </div>
                                     
-                                                                    <div class="card-body">
-                                                                        <p class="card-text">Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users.</p>
-                                                                        <a href="#" class="btn btn-primary">Order</a>
-                                                                    </div>
+                                                                <div class="card-body">
+                                                                    <p class="card-text">Typically 450-400 words, an e-book is perfect for your target audience ranging from prospective customers to users.</p>
+                                                                    <a href="#" class="btn btn-primary">Order</a>
+                                                                </div>
                                                         </div>
                                                 </div>
 
 
-
+                                               <!-- FOOTER CONTENT -->
 
                                                 <div class="footer" > 
                                                         <span class="fa-stack fa-lg">
@@ -481,7 +503,7 @@
 
                                                 <div class="footer">
                                                         <p style="color: rgba(0,0,0,0.5); font-size: 17.5px; padding-top: 6px; padding-bottom: 4px; line-height: 1.1;" ><br> Copyright @ 2019 White Panda Media Pvt. Ltd. 
-                                                            <br>  All right reserved </p>
+                                                            <br>  All rights reserved </p>
                                                 </div>
 
                                                 <div class="footer" style="text-decoration: underline" >
@@ -497,14 +519,10 @@
 
                                     
                                 
+            </div>
+
         </div>
 
-    </div>
-
     
-    
-
-
-
-</body>
+    </body>
 </html>
